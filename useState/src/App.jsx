@@ -4,6 +4,8 @@ function App() {
   const [num, numState] = useState(10);
   const [name, nameState] = useState("dev");
   const [age, ageState] = useState(18);
+  const [resource,resourceState]=useState('Angular')
+
 
   const myStyle = {
     display: 'flex',
@@ -49,6 +51,17 @@ function App() {
 
       <br />
       <span>Hello {name}, you are currently {age} years old</span>
+
+
+
+      <div>
+
+        <button onClick={()=>{resourceState("Angular")}}>Angular</button>
+        <button onClick={()=>{resourceState("React")}}>React</button>
+        <button onClick={()=>{resourceState("HTML")}}>HTML</button>
+
+      </div>
+        <span>{resource}</span>
     </div>
   );
 }
