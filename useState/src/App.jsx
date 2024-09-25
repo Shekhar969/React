@@ -1,54 +1,55 @@
-// liked ? 'liked' : 'did not like'
-// liked ? 'if' : 'else'
-
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 
 function App() {
   const [num, numState] = useState(10);
   const [name, nameState] = useState("dev");
   const [age, ageState] = useState(18);
 
-
+  const myStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    margin:'30px',
+    paddig:'50px',
+    fontSize:'25px'
+  };
 
   function decrementBtn() {
-    // numState(num-1)
-    numState((prevnum) => prevnum - 1);
+    numState((prevNum) => prevNum - 1);
   }
 
   function incrementBtn() {
-    numState(num + 1);
+    numState((prevNum) => prevNum + 1);
   }
 
-  function changeName(e){
-        nameState(e.target.value)
+  function changeName(e) {
+    nameState(e.target.value);
   }
 
-  function incrementAge(){
-    ageState(pervAge => pervAge +1)
+  function incrementAge() {
+    ageState((prevAge) => prevAge + 1);
   }
+
   return (
-    <>
+    <div style={myStyle}>
       <button onClick={decrementBtn}>-</button>
       <span> {num} </span>
       <button onClick={incrementBtn}>+</button>
 
       <br />
 
-        <input 
+      <input 
         type="text"
         value={name}
         onChange={changeName}
-         />
+      />
 
-        <button onClick={incrementAge}>IncrementAge</button>
+      <button onClick={incrementAge}>Increment Age</button>
 
-        <br />
-        <span>Hello {name} Your are Curently {age} year's Old</span>
-
-
-    </>
+      <br />
+      <span>Hello {name}, you are currently {age} years old</span>
+    </div>
   );
 }
 
