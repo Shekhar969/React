@@ -1,6 +1,6 @@
 import React from "react";
-import { FaMapMarkerAlt, FaPhoneAlt, FaGithub, FaFacebook, IoMdMail } from "react-icons/fa";
-
+import { FaMapMarkerAlt, FaPhoneAlt, FaGithub, FaFacebook } from "react-icons/fa";
+import {IoMdMail} from "react-icons/io"
 
 function InfoSide() {
   return (
