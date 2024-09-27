@@ -2,7 +2,7 @@ import React from 'react'
 
 function FormSide() {
   return (
-    <div>F</div>
+    <div>contect form</div>
   )
 }
 
