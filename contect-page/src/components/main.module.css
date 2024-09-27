@@ -1,0 +1,32 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icons {
+    margin: 10px 0; 
+}
+
+.icons svg {
+    margin-right: 8px;
+    height: 30px;
+    width: 30px;
+}
+.Text{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.infoSide{
+    width: 50%;
+}
+h1{
+    color: aqua;
+}
+
+.formSide{
+    width: 50%;
+}

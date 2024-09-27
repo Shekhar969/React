@@ -1,17 +1,15 @@
-import React from 'react'
-import InfoSide from './infoSide'
-import FormSide from './formSide'
+import React from 'react';
+import InfoSide from './infoSide';
+import FormSide from './formSide';
+import Style from './main.module.css';
 
-function ContectUS() {
-
-
-
+function ContactUS() {
   return (
-    <div className='mainCointener'>
-    <div className='infoSide'><InfoSide /></div>
-    <div className='formSide'><FormSide /></div>
+    <div className={Style.mainContainer}>
+      <div className={Style.infoSide}><InfoSide /></div>
+      <div className={Style.formSide}><FormSide /></div>
     </div>
-  )
+  );
 }
 
-export default ContectUS
+export default ContactUS;
