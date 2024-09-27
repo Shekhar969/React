@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Style from "./main.module.css";
-import Gif from "../assets/1.gif"; // Ensure this path is correct
+import Gif from "../assets/1.gif"; 
 
 function FormSide() {
   const [name, setName] = useState("");
-  const [submitted, setSubmitted] = useState(false); // Track submission state
+  const [submitted, setSubmitted] = useState(false); 
 
   const btnClicked = () => {
-    setSubmitted(true); // Set submitted state to true
+    setSubmitted(true); 
   };
 
   const nameChange = (e) => {
@@ -24,13 +24,14 @@ function FormSide() {
             value={name} 
             placeholder="Your Full Name" 
             onChange={nameChange} 
+            required
           />
           <input 
             type="text"  
             placeholder="Your Email" 
           />
           <textarea placeholder="Your Message" />
-          <button onClick={btnClicked}>Submit</button>
+          <button type="submit" onClick={btnClicked}>Submit</button>
         </div>
       ) : (
         <div className={Style.formConformation}>
