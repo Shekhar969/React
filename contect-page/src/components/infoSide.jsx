@@ -6,7 +6,7 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import Style from "./main.module.css"; // Adjust the path if necessary
+import Style from "./main.module.css"; 
 
 function InfoSide() {
   return (
