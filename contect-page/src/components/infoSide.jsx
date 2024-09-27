@@ -12,11 +12,13 @@ function InfoSide() {
   return (
     <div className={Style.infoContainer}>
       <h1>Contact</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis
-        exercitationem quos unde. Corrupti neque, consequatur tenetur architecto
-        non porro corporis eveniet eum fugiat rem. Necessitatibus blanditiis
-        expedita sequi quasi.
+      <p className={Style.contectsummary}>
+        Connecting with us is an opportunity to enhance your experience. Whether
+        you have questions, feedback, or ideas, we value your input. Your
+        insights not only help us improve but also allow us to tailor our
+        services to better meet your needs. We’re committed to providing
+        exceptional support and fostering a collaborative relationship. Don’t
+        hesitate to reach out—let’s embark on this journey together!
       </p>
 
       <p className={Style.icons}>
@@ -29,7 +31,7 @@ function InfoSide() {
         <IoMdMail />{" "}
         <span className={Style.Text}>shekharrawal96@gmail.com</span>
       </p>
-      <span>
+      <p>
         <a
           className={Style.icons}
           href="https://github.com/Shekhar969"
@@ -46,7 +48,7 @@ function InfoSide() {
         >
           <FaFacebook />
         </a>
-      </span>
+      </p>
     </div>
   );
 }
