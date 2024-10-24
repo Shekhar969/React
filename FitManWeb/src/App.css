@@ -36,14 +36,13 @@ box-sizing: border-box;
 
 .sliderControls {
   display: flex;
-  justify-content: space-between;
   margin-top: 1rem;
 }
 
 .arrows {
+  
   background: none;
   border: none;
-  color:rgb(243, 230, 206);
   padding: 10px;
   font-size: 45px;
   align-items: center;
@@ -66,6 +65,7 @@ box-sizing: border-box;
 }
 
 .exerciseComplete{
+  margin-top: 20px;
   border: 1px solid beige;
   border-radius: 10px;
   font-size: 30px;
