@@ -1,12 +1,13 @@
+import Allexc from './components/allexc'
+import RenderContentForDay from './components/dayexc'
 import './App.css'
-
 function App() {
-
   return (
     <>
-  <h1>hello</h1>
+      <Allexc />
+      <RenderContentForDay />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
